@@ -1,0 +1,1305 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+.parent{
+    height: 130px;
+    width: 100%;
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bullets{
+list-style-type: none;
+color: rgb(56,56,88);
+display: flex;
+font-size: 20px;
+font-weight: 900;
+width: 50% ;
+justify-content: space-between;
+align-items: center;
+
+}
+.bullets a{
+    text-decoration: none;
+    color: rgb(56,56,88);
+}
+.a:hover{
+    color: rgb(192,148,120);
+    
+}
+.b:hover{
+    color: rgb(192,148,120);
+}
+.c:hover{
+    color: rgb(192,148,120);
+}
+.d:hover{
+    color: rgb(192,148,120);
+}
+.e:hover{
+    color: rgb(192,148,120);
+}
+.f:hover{
+    color: rgb(192,148,120);
+}
+.icon{
+    display: flex;
+    color: rgb(44,44,44);
+    width: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon i{
+    font-size: 25px;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://demo-lopez.myshopify.com/cdn/shop/files/slider_01_4ea6d366-5a77-425c-a461-43a6dfb627fa.png?v=1613545344);
+    background-position: center;
+    display: flex;
+    position: relative;
+    
+}
+.content p{
+    font-family:'Josefin Slab', serif;
+    color: rgb(64,64,64);
+    font-size: medium;
+}
+.sub{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn1{
+    
+    color: rgb(102,102,102);
+    background-color:white;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    font-weight: 100;
+    font-size: 15px;
+    transition: 0.3s;
+    /* justify-content: center; */
+    /* align-items: center; */
+      
+}
+.btn1:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.bg{ 
+  width: 35%;   
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 20px;
+  /* background-color: aqua; */
+  position: absolute;
+  top: 35%;
+  left: 9%;
+ 
+    
+}
+.content:hover .bg{
+    display: flex;
+    animation: bg-product;
+    animation-duration:1s;
+
+}
+@keyframes bg-product{
+    from{
+      transform: scale3d(0);
+    }
+    to{
+       transform: translateY(-30px);
+    }
+}
+
+.head{
+    font-family:'Newsreader', serif;;
+    font-size: 40px;
+    color: rgb(68,68,68);
+    font-weight: 100;
+}
+
+.icontext{
+    width: 28%;
+    height: 90px;
+    display: flex;
+    font-family:'Josefin Slab', serif;
+    font-size:14px;
+    gap: 10px;
+   
+
+}
+.head-para{
+    width: 300px;
+    color:rgb(99,77,80);
+
+}
+.whole-free{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.whole{
+    display: flex;
+    height: 200px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.icontext i{
+    font-size: 29px;   
+    color: rgb(99,77,80)
+}
+
+.baner{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,255,255);
+    gap: 25px;
+}
+.baner img{
+    height: 300px;
+    width: 40%;
+}
+
+.newarrival{
+    
+    display: flex;
+    height: 110px;
+    width: 100%;
+    color: rgb(56,56,56);
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+   
+}
+.wholeclass{
+    display: flex;
+    height:800px;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+.viewitems-whole{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+   
+}
+.viewitems{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    
+   
+  
+}
+.product{
+    height: 380px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.product img{
+    width: 275px;
+    height: 300px;
+}
+.cart1{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none;
+}
+.product:hover .cart1{
+    display: flex;
+    animation: cart;
+    animation-duration:0.5s;
+}
+@keyframes cart{
+from{
+  transform: scale3d(1);
+}
+to{
+   transform: translateY(-10px);
+}
+}
+
+.cart2{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none;
+}
+.product:hover .cart2{
+    display: flex;
+    animation-name: cart;
+    animation-duration: 0.5s;
+}
+.cart3{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none;
+  
+}
+.product:hover .cart3{
+    display: flex;
+    animation-name: cart;
+    animation-duration: 0.5s;
+}
+.cart4{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none;
+  
+}
+.product:hover .cart4{
+    display: flex;
+    animation-name: cart;
+    animation-duration: 0.5s;
+}
+.cart5{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none;
+  
+}
+.product:hover .cart5{
+    display: flex;
+    animation-name: cart;
+    animation-duration: 0.5s;
+}
+.cart6{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none; 
+  
+}
+.product:hover .cart6{
+    display: flex;
+    animation-name: cart;
+    animation-duration: 0.5s;
+}
+.cart7{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none;
+  
+}
+.product:hover .cart7{
+    display: flex;
+    animation-name: cart;
+    animation-duration: 0.5s;
+}
+
+.cart8{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color:rgb(255,255,255);
+    color:rgb(100,72,100);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    display: none;  
+}
+.product:hover .cart8{
+    display: flex;
+    animation-name: cart;
+    animation-duration: 0.5s;
+}
+.amount{
+    text-decoration: line-through;
+}
+
+.testimonal{
+    height:75%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(247,247,247);
+    
+}
+.ti{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content:space-evenly;
+    align-items: center;
+    color: rgb(56,56,56);
+    background-color:rgb(247,247,247);
+    font-size: 20px;
+}
+.test{
+    border-radius: 50%;
+    height: 120px; 
+    width: 120px;
+}
+
+.recent{
+    display: flex;
+    height: 110px;
+    width: 100%;
+    color: rgb(56,56,56);
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;   
+}
+.imageproduct{
+    display: flex;
+    height: 61%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+} 
+.small{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    gap: 15px;
+   
+
+}
+.image{
+    width: 400PX;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    color:  rgb(102,102,102);;
+}
+.cont{
+    font-size: 20px;
+   
+    
+}
+.brown:hover{
+    color: rgb(192,148,120);
+}
+
+.contmail{
+    height: 35%;
+    width: 100%;
+   background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wcontmail{
+    height: 90%;
+    width: 90%;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.update{
+    height: 30%;
+    width: 30%;
+    color: #383838;
+ 
+  
+    
+    
+}
+.mail{
+    height: 10%;
+    width: 30%;
+   
+  
+}
+.mailid{
+    font-size: 22px;
+    border-radius:20px;
+}
+.symbol{
+    height: 30%;
+    width: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.symbol-image{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    gap: 20 px;
+    align-items: center;
+    justify-content: space-evenly;  
+
+}
+.symbol-ph{
+    display: block;
+    display: none;
+}
+.symbol-image-ph{
+
+    display: none;
+}
+.footer{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247,247,247);
+   
+}
+.footer-container{
+    height:70%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap:15px;
+    
+   
+   
+}
+
+.lopez{
+    height: 280px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.lopezicon{
+    height: 48px;
+    width: 160px;
+}
+.all-icon{
+    height: 40px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 20px;
+    color: rgb(102,102,126);
+    
+  
+}
+.lopez p{
+    color: rgb(102,102,126);
+}
+
+
+.my-account{
+    height: 280px;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+      
+}
+
+.account{
+    list-style-type:none ;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: rgb(102,102,126);
+}
+
+.quicklinks{
+    height: 280px;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+   
+}
+.quick{
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: rgb(102,102,126);
+    
+}
+.contact{
+    height: 280px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.lorem-para{
+    color: rgb(102,102,126);
+}
+.location{
+    color: rgb(102,102,126);
+}
+.contact-mailfull{
+    height: 45px;
+    width: 290px;
+}
+.contact-mail{
+    height: 45px;
+    width: 250px;
+    background-color:black;
+    color: #f7f7f7;
+}
+.wcc{
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.mwp{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 4px;
+}
+.wholecopy{
+    height:90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: px;
+    color: rgb(102,102,126);
+    
+}
+/* media query tab */
+
+@media (max-width:1200px){
+    .icon{
+        display: flex;
+        color: rgb(44,44,44);
+        width: 7%;
+        gap: 15px;
+    }
+    .icon i{
+        font-size: 20px;
+    }
+    .bullets{
+        display: flex;
+        font-size: 20px;
+        font-weight: 200;
+        width: 55%;
+    }
+    .content{
+        background-repeat: no-repeat;
+        height: 40vh;
+        width: 100%;
+    }
+    .bg{
+        width: 44%;
+    }
+    .whole{
+        display: flex;
+        height: 200px;
+        width: 94%;
+        align-items: center;
+        gap: 25px;
+        justify-content: center;
+
+    }
+    .icontext{
+        width: 28%;
+        font-family:'Josefin Slab', serif;
+        font-size: 14px;
+        display: flex;
+        gap: 20px;
+    
+    }
+    .freehead{
+        font-size: 18px;
+    }
+    .baner{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255,255,255);
+        gap: 20px;
+    }
+    .baner img{
+        height: 90%;
+        width: 45%;
+    }
+    .newarrival{
+        align-items: center;
+        display: flex;
+        height: 120px;
+        width: 100%;
+    }
+    .wholeclass{
+        display: flex;
+        height:100%;
+        width: 100%;
+        justify-content:center;
+        align-items: center; 
+
+      
+    }
+    .viewitems-whole{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        width: 94%; 
+        height: 94%;
+
+    }
+    .viewitems{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+   
+         
+    }
+    .product{
+        height: 100%;
+        width: 100%;
+     
+    }
+    .product img{
+        height: 80%;
+        width: 100%;
+
+    }
+    .testimonal{
+        height: 40%;
+        width: 100%;
+    }
+    .ti{
+        height: 90%;
+        width: 75%;
+        display: flex;
+        text-align: center;
+    }
+    .ti img{
+        border-radius: 50%;
+        height: 80px; 
+        width: 80px;
+    }
+    .imageproduct{
+        display: flex;
+        height:28%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;  
+    } 
+    .small{
+        width: 90%;
+        height: 75%;
+        display: flex;
+        gap: 20px;     
+    }
+    .image{
+        width: 30%;
+        height: 100%;
+   
+    }
+    .image img{
+        height: 70%;
+    
+    }
+    .contmail{
+        height: 30%;
+        width: 100%;
+    }
+    .symbol{
+        height: 20%;
+        width: 100%;
+    }
+    .footer{
+        height: 30%;
+        width: 100%;
+
+       
+    }
+    .footer-container{
+        height:85%;
+        width: 90%;
+   
+
+    }
+    .lop{
+        font-size: 15px;
+    }
+    .lopezicon{
+        height: 10%;
+        width: 60%;
+    }
+    .contact-mailfull [type=email]{
+        height: 50%;
+        width: 55%;
+
+    }
+    .account{
+        font-size: 11px;
+    }
+    .quick{
+        font-size: 11px;
+    }
+    .lorem-para{
+        font-size: 11px;
+    }
+    .location{
+        font-size: 11px;
+    }
+    .lopez{
+          height: 230px;
+    }
+    .my-account{
+        height: 230px;
+
+    }
+    .quicklinks{
+        height: 230px;
+    }
+    .contact{
+        height: 230px;
+
+    }
+    .contact-mail{
+        height: 25px;
+        width: 60%;
+    }
+    .wcc{
+        height: 5%;
+    }
+    .wholecopy{
+        height:100%;
+        width: 90%;
+        
+    }
+}
+@media(max-width:600px){
+    .parent{
+        height: 70px;
+        width: 100%;
+    }
+    .nav-logo{
+        width: 13%;
+        height: 25px;
+    }
+    
+    .bullets{
+    display: flex;
+    font-size: 10px;
+    font-weight: 200;
+    width: 60%;
+    }
+    .icon{
+        display: flex;
+        gap: 8px;
+        width: 10%;
+    }
+    .icon i{
+        font-size: 10px;
+    }
+    .content{
+        height: 300px;
+        width: 100%; 
+        background-image: url(https://demo-lopez.myshopify.com/cdn/shop/files/for-mobile_02_110a5d0c-84ff-4e85-a5ac-18b026b9073d.png?v=1613545768);
+        background-position: center;
+        background-size: cover;
+    }
+    .bg p{
+        font-size:15px;
+        font-weight: 100;
+        color: white;
+        line-height: 25px;
+    }
+    .sub{
+        width: 100%;
+        height: 100%;
+    }
+    .btn1{
+        border-radius: 20px;
+        height: 30px;
+        width: 120px;
+        font-weight: 100;
+        font-size: 20px;
+        transition: 0.3s;     
+    }
+    .bg{ 
+        width: 80%;   
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        top: 15%;
+        
+    }
+    .bg h1{
+          font-size: 24px;
+          color: white;
+    }
+    .content:hover .bg{
+        display: flex;
+        animation: bg-product;
+        animation-duration:1s;
+    
+    }
+    @keyframes bg-product{
+        from{
+          transform: scale3d(0);
+        }
+        to{
+           transform: translateY(-5px);
+        }
+    }
+    .head{
+        font-family:'Newsreader', serif;;
+        font-size: 40px;
+        color: rgb(68,68,68);
+        font-weight: 100;
+    }
+    
+    .icontext{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        font-size:14px;
+        gap: 10px;     
+    
+    }
+    .head-para{
+        height: 65px;
+        width: 100%;
+        color:rgb(99,77,80);
+    
+    }
+    .whole-free{
+        display: flex;
+        height: 300px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .whole{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+    .icontext i{
+        font-size: 29px;   
+        color: rgb(99,77,80)
+    }
+    .baner{
+        height: 450px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255,255,255);
+    }
+    .baner img{
+        height: 200px;
+        width: 90%;
+    }
+    .newarrival{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 60px;
+        width: 100%;
+    }
+    .newarrival h1{
+       font-size: 15px;
+   
+    }
+    .wholeclass{
+        display: flex;
+        height:3300px;
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+    }
+    .viewitems-whole{
+        width: 95%;
+        height: 98%;   
+    }
+    .viewitems{
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+
+    }
+    .product{
+        height: 380px;
+        width: 100%;
+
+    }
+    .product img{
+        width: 100%;
+        height: 300px;
+    }
+    .testimonal{
+        height:400px;
+        width:100%;
+    }
+    .ti{
+        height: 85%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ti img{
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+    } 
+    .ti h2{
+        font-size: 16px;
+    }
+    .ti p{
+        font-size: 12px;
+        font-family: 'Rubik', sans-serif;
+        line-height: 20px;
+    }
+    .recent{
+        display: flex;
+        height: 60px;
+        width: 100%; 
+    }
+    .recent h1{
+        font-size: 15px;
+    }
+    .imageproduct{
+        display: flex;
+        height: 1000px;
+        width: 100%;
+       
+    } 
+    .small{
+        width: 90%;
+        height: 94%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .cont p{
+        font-size: 15px;   
+        line-height: 20px;
+    }
+    .cont h5{
+        font-size: 15px; 
+    }
+    .brown:hover{
+        color: rgb(192,148,120);
+    }
+    
+    .contmail{
+        height: 30%;
+        width: 100%;
+        background-color: #f7f7f7;
+
+    }
+    .wcontmail{
+        height: 90%;
+        width: 90%;
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+   
+    
+    }
+    .update{
+        height: 70%;
+        width: 90%;
+        color: #383838;  
+    }
+    .update h2{
+        font-size: 22px;
+    }
+    .update p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .mail{
+        height: 10%;
+        width: 90%;
+
+    }
+    .mailid{
+        font-size: 14px;
+        border-radius:20px;
+    }
+    .symbol-ph{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        
+    }
+    .symbol-image-ph{
+        height:120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    .symbol-image-ph img{
+        height: 70px;
+        width: 60px;
+    }
+    .symbol{
+        display: block;
+        display: none;
+    }
+    .symbol-image{
+       display: none;
+    
+    }
+
+    .footer{
+        height: 1000px;
+        width: 100%;
+        background-color:#f7f7f7;
+  
+    }
+    .footer-container{
+        height:90%;
+        width: 90%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      
+
+    }
+    .lopez{    
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+     
+    }
+    .contact{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .quicklinks{
+        height: 110px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;   
+    }
+    .my-account{
+        height: 110px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .lopezicon{
+        height: 12%;
+        width: 30%;
+    }
+    .lop{
+        font-size: 17px;
+    }
+    .contact-mailfull [type=email]{
+        height: 50%;
+        width: 55%;
+
+    }
+    .account{
+        font-size: 14px;
+    }
+    .quick{
+        font-size: 14px;
+    }
+    .lorem-para{
+        font-size: 11px;
+    }
+    .location{
+        font-size: 14px;
+    }
+    .lopez{
+          height: 230px;
+    }
+    .my-account{
+        height: 230px;
+
+    }
+    .quicklinks{
+        height: 230px;
+    }
+    .contact{
+        height: 230px;
+
+    }
+    .contact-mail{
+        height: 25px;
+        width: 60%;
+    }
+    .contact p{
+        font-size: 14px;
+    }
+    .wcc{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .wholecopy{
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 12.5px; 
+    }
+    .mwp{
+        display: flex;
+        gap: 9px;
+        font-size: 12px;
+    }
+
+    
+
+
+}
+
+
+
+
+

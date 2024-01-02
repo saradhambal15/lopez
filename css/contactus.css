@@ -1,0 +1,753 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+
+.parent{
+    height: 130px;
+    width: 100%;
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.bullets{
+list-style-type: none;
+color: rgb(56,56,88);
+display: flex;
+font-size: 20px;
+font-weight: 900;
+width: 50% ;
+justify-content: space-between;
+align-items: center;
+
+
+}
+.bullets a{
+    text-decoration: none;
+    color: rgb(56,56,88);
+}
+
+
+.a:hover{
+    color: rgb(192,148,120);
+    
+}
+.b:hover{
+    color: rgb(192,148,120);
+}
+.c:hover{
+    color: rgb(192,148,120);
+}
+.d:hover{
+    color: rgb(192,148,120);
+}
+.e:hover{
+    color: rgb(192,148,120);
+}
+.f:hover{
+    color: rgb(192,148,120);
+}
+.icon{
+    display: flex;
+    color: rgb(44,44,44);
+    width: 5%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.icon i{
+    font-size: 25px;
+}
+.whole-container{
+    height: 185px;
+    width: 100%;
+    /* background-color:red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(	https://demo-lopez.myshopify.com/cdn/shop/files/Untitled-1.png?v=1613545531);
+}
+.contact-container{
+    height: 85px;
+    width:80%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 12px;
+
+    
+}
+.h-contact{
+    height: 48px;
+    width: 100%;
+    /* background-color: azure; */
+    color:#FFFFFF;
+    font-size: 20PX;
+}
+.p-contact{
+    height: 21px;
+    width: 100%;
+    /* background-color: azure; */
+    color: #FFFFFF;
+}
+.map{
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-container{
+    height: 1050px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.map-imagepara{
+    height: 1050px;
+    width: 60%;
+   
+
+}
+.map-image{
+    width: 100%;
+    height: 470px;
+    background-color: #FFFFFF;
+}
+.map-image img{
+    width: 100%;
+    height: 430px;
+}
+.map-content{
+    width: 100%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+}
+.map-content h4{
+    color: #383838;
+    font-size: 20px;
+}
+.name-email{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(94,97,94) ;
+}
+.name-email [type=text]{
+    height: 45px;
+    width: 350px;
+    border: 1px solid #ECECEC;
+}
+.tele-sub{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(94,97,94) ;
+
+}
+.tele-sub [type=text]{
+    height: 45px;
+    width: 350px;
+    border: 1px solid #ECECEC;
+}
+.comment{
+    height: 230px;
+    width: 100%;
+    color:rgb(94,97,94) ;
+}
+.comment [type=text]{
+    height: 235px;
+    width: 750px;
+    border: 1px solid #ECECEC;
+}
+.map-send{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.map-send button{
+    height: 45px;
+    width: 150px;
+    color: #f7f7f7;
+    background-color:rgb(56,56,88);
+    border: 1px solid ;
+
+}
+
+
+.map-para{
+    height: 1050px;
+    width: 35%;
+    background-color: #FFFFFF;
+    color: rgb(94,97,94);
+    font-size: 20px;
+   
+    
+
+}
+
+
+
+.footer{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247,247,247);
+   
+}
+.footer-container{
+    height:70%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap:15px;
+    
+   
+   
+}
+
+.lopez{
+    height: 280px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.lopezicon{
+    height: 48px;
+    width: 160px;
+}
+.all-icon{
+    height: 40px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 20px;
+    color: rgb(102,102,126);
+    
+  
+}
+.lopez p{
+    color: rgb(102,102,126);
+}
+
+
+.my-account{
+    height: 280px;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+      
+}
+
+.account{
+    list-style-type:none ;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: rgb(102,102,126);
+}
+
+.quicklinks{
+    height: 280px;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+   
+}
+.quick{
+    list-style-type:none ;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: rgb(102,102,126);
+    
+}
+.contact{
+    height: 280px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.lorem-para{
+    color: rgb(102,102,126);
+}
+.location{
+    color: rgb(102,102,126);
+}
+.contact-mailfull{
+    height: 45px;
+    width: 290px;
+}
+.contact-mail{
+    height: 45px;
+    width: 250px;
+    background-color:black;
+    color: #f7f7f7;
+}
+.wcc{
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.mwp{
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 4px;
+}
+.wholecopy{
+    height:90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: px;
+    color: rgb(102,102,126);
+    
+}
+@media(max-width:1200px){
+    .icon{
+        display: flex;
+        color: rgb(44,44,44);
+        width: 7%;
+        gap: 15px;
+
+    }
+    .icon i{
+        font-size: 20px;
+    }
+    .bullets{
+        display: flex;
+        font-size: 20px;
+        font-weight: 200;
+        width: 55%;
+    }
+    .map-para{
+        font-size: 16px;
+        height: 830px;
+    }
+    .map-image{
+        width: 100%;
+        height: 400px;
+        background-color: #FFFFFF;
+ 
+    }
+    .map-image img{
+        width: 100%;
+        height: 95%;
+    }
+    .map-imagepara{
+        height: 420px;
+        width: 60%; 
+    
+    }
+
+    .map-content{
+        width: 100%;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 30px;
+    }
+    .map-content h4{
+        color: #383838;
+        font-size: 20px;
+    }
+    .name-email{
+        height: 25px;
+        width: 100%;
+        display: flex;
+        gap: 3%;
+    }
+    .name-email [type=text]{
+        height: 30px;
+        width: 100%;
+        border: 1px solid #ECECEC;
+    }
+    .tele-sub{
+        height: 25px;
+        width: 100%;
+        display: flex;
+        gap: 50px;
+        color:rgb(94,97,94) ;
+    
+    }
+    .tele-sub [type=text]{
+        height: 30px;
+        width: 100%;
+        border: 1px solid #ECECEC;
+    }
+    .comment{
+        height: 180px;
+        width: 100%;
+        color:rgb(94,97,94) ;
+        display: flex;
+        flex-direction: column;
+  
+    }
+    .comment [type=text]{
+        height: 165px;
+        width: 100%;
+        border: 1px solid #ECECEC;
+    }
+    .map-send{
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .map-send button{
+        height: 35px;
+        width: 150px;
+        color: #f7f7f7;
+        background-color:rgb(56,56,88);
+        border: 1px solid ;
+    }
+    .map{
+        height: 870px;
+        width: 100%;
+    }
+    .map-container{
+        height: 830px;
+        width: 90%;
+    
+    }
+    .footer{
+        height: 30%;
+        width: 100%;
+
+       
+    }
+    .footer-container{
+        height:85%;
+        width: 90%;
+   
+
+    }
+    .lop{
+        font-size: 15px;
+    }
+    .lopezicon{
+        height: 10%;
+        width: 60%;
+    }
+    .contact-mailfull [type=email]{
+        height: 50%;
+        width: 55%;
+
+    }
+    .account{
+        font-size: 11px;
+    }
+    .quick{
+        font-size: 11px;
+    }
+    .lorem-para{
+        font-size: 11px;
+    }
+    .location{
+        font-size: 11px;
+    }
+    .lopez{
+          height: 230px;
+    }
+    .my-account{
+        height: 230px;
+
+    }
+    .quicklinks{
+        height: 230px;
+    }
+    .contact{
+        height: 230px;
+
+    }
+    .contact-mail{
+        height: 25px;
+        width: 60%;
+    }
+    .wcc{
+        height: 5%;
+    }
+    .wholecopy{
+        height:100%;
+        width: 90%;
+        
+    }
+
+}
+@media(max-width:600px){
+    .parent{
+        height: 70px;
+        width: 100%;
+    }
+    .nav-logo{
+        width: 13%;
+        height: 25px;
+    }
+    
+    .bullets{
+    display: flex;
+    font-size: 10px;
+    font-weight: 200;
+    width: 60%;
+    }
+    .icon{
+        display: flex;
+        gap: 8px;
+        width: 10%;
+    }
+    .icon i{
+        font-size: 10px;
+    }
+    .map{
+        height: 780px;
+        width: 100%;
+    }
+    .map-container{
+        height: 750px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    .map-imagepara{
+        height: 590px;
+        width: 100%;
+        justify-content: space-between;
+    
+    }
+    .map-para{
+        font-size: 12px;
+        height: 110px;
+        width: 100%;
+    }
+    .map-para h4{
+        font-size: 12px;
+    }
+    .map-image{
+        width: 100%;
+        height: 250px;
+        background-color: #FFFFFF;
+    }
+    .map-image img{
+        width: 100%;
+        height: 95%;
+    }
+    .map-content{
+        width: 100%;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        gap: 14px;
+    }
+    .map-content h4{
+        color: #383838;
+        font-size: 16px;
+    }
+    .name-email{
+        height: 85px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    .name-email [type=text]{
+        height: 15px;
+        width: 50%;
+        border: 1px solid #ECECEC;
+    }
+    .tele-sub{
+        height: 85px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+        color:rgb(94,97,94);
+    
+    }
+    .tele-sub [type=text]{
+        height: 15px;
+        width: 50%;
+        border: 1px solid #ECECEC;
+    }
+    .comment{
+        height: 100px;
+        width: 100%;
+        color:rgb(94,97,94) ;
+        display: flex;
+        flex-direction: column;
+  
+    }
+    .comment [type=text]{
+        height: 60px;
+        width: 90%;
+        border: 1px solid #ECECEC;
+
+    }
+    .map-send{
+        height: 20px;
+        width: 100%;
+        display: flex;
+    }
+    .map-send button{
+        height: 15px;
+        width: 70px;
+        color: #f7f7f7;
+        background-color:rgb(56,56,88);
+        border: 1px solid ;
+        font-size: 8px;
+    }
+    .footer{
+        height: 1000px;
+        width: 100%;
+        background-color:#f7f7f7;
+  
+    }
+    .footer-container{
+        height:90%;
+        width: 90%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      
+
+    }
+    .lopez{    
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+     
+    }
+    .contact{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .quicklinks{
+        height: 110px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;   
+    }
+    .my-account{
+        height: 110px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .lopezicon{
+        height: 12%;
+        width: 30%;
+    }
+    .lop{
+        font-size: 17px;
+    }
+    .contact-mailfull [type=email]{
+        height: 50%;
+        width: 55%;
+
+    }
+    .account{
+        font-size: 14px;
+    }
+    .quick{
+        font-size: 14px;
+    }
+    .lorem-para{
+        font-size: 11px;
+    }
+    .location{
+        font-size: 14px;
+    }
+    .lopez{
+          height: 230px;
+    }
+    .my-account{
+        height: 230px;
+
+    }
+    .quicklinks{
+        height: 230px;
+    }
+    .contact{
+        height: 230px;
+
+    }
+    .contact-mail{
+        height: 25px;
+        width: 60%;
+    }
+    .contact p{
+        font-size: 14px;
+    }
+    .wcc{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .wholecopy{
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 12.5px; 
+    }
+    .mwp{
+        display: flex;
+        gap: 9px;
+        font-size: 12px;
+    }
+ 
+}
